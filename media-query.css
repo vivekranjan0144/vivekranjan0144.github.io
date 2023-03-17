@@ -1,0 +1,124 @@
+@media screen and (max-width: 991px) {
+  .nav {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .profile-img {
+    height: 26rem;
+    width: 26rem;
+  }
+
+  .profile-img::before {
+  height: 25em;
+  width: 25em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .menu li {
+    margin-top: 40px;
+  }
+  
+  .menu li a {
+    padding: 10px;
+  }
+    
+  .open-menu , .close-menu {
+    display: block;
+  }
+    
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  section {
+    min-height: auto;
+  }
+
+  .profile-img-conntainer {
+    display: none;
+  }
+
+  .home-section {
+    padding-top: 14rem;
+    padding-bottom: 7rem;
+  }
+
+  .home-content h3 {
+    font-size: 3rem;
+    margin-top: 1.9rem;
+  }
+
+  .home-content h1{
+    font-size: 6rem;
+  }
+
+  .cv-btn {
+    margin-top: 3.8rem;
+  }
+
+  .tech-skill , .project-section, .contact-section {
+    padding-block: 5rem;
+  }
+
+  .skill-cards {
+    margin-top: 4rem;
+  }
+
+  .contact-form-top {
+    flex-wrap: wrap;
+  }
+
+  input[type="text"] , input[type="email"] {
+    width: 86vw;
+  } 
+
+  textarea {
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 447px)  {
+  .project-img-container {
+    height: 36vw;
+    min-width: 80vw;
+  }
+
+  .project-img {
+    width: 80vw;
+  }
+
+  .project-card {
+    padding: 1rem;
+    gap: 1em;
+  }
+
+  .project-card h2 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
